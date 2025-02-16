@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+*{
+  margin:0;
+  padding:0;
+}
+h1, h4 {
+  color: #2c3e50; /* Deep navy */
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  color: #34495e; /* Muted navy */
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a {
+  font-family: 'Audiowide', sans-serif; 
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #3498db; /* Soft blue */
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background-color: #2980b9; /* Darker blue */
+  transform: scale(1.1); 
+}
+
+.myDiv {
+  border: 5px outset #2ecc71; /* Green border */
+  background-color: #021014d4; /* Light grey */
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 12px;
+  color:white;
+}
+
+.move {
+  width: 125px;
+  height: 120px;
+  background-color: #8e44ad; /* Purple */
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-radius: 12px;
+  color: white;
+}
+
+@keyframes example {
+  0%   {background-color: #8e44ad; left:1200px; top:20px;}
+
+  50%  {background-color: #f1c40f; left:1200px; top:220px;}
+  100% {background-color: #8e44ad; left:1200px; top:20px;}
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #3498db; /* Soft blue */
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+.text1 {
+  color: rgb(230, 102, 23);
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-family: 'Merriweather', serif;
+}
+.text1 p{
+  color: rgb(246, 244, 243);
+}
+.text1 h4{
+  color:rgb(231, 239, 11)
+}
+.text1 h1{
+  color:rgb(7, 237, 245)
+}
+
+.button3 {
+  background-color: white;
+  color: #e74c3c; /* Soft red */
+  border: 2px solid #e74c3c;
+  font-family: 'Sofia', cursive;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button3:hover {
+  background-color: #e74c3c;
+  color: white;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #2c3e50; /* Deep navy */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border-radius: 12px 12px 0 0;
+}
+
+footer a {
+  color: rgb(102, 102, 255); 
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+}
+footer p{
+  color:white;
+}
+
+.fa-facebook { background: #3b5998; color: white; }
+.fa-twitter { background: #1da1f2; color: white; }
+.fa-instagram { background: #c13584; color: white; }
+
+.fa:hover {
+  transform: scale(1.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="myDiv">
+<title>CRICKET BLOG</title>
+<div class="text1">
+<h1>Cricket Legends</h1>
+<br>
+</div>
+
+<nav>
+  <a href="./Cricket.html">Home</a> |
+  <a href="./ViratKohli.html">Virat Kohli</a> |
+  <a href="./MSDhoni.html">MS Dhoni</a> |
+  <a href="./SachinTendulkar.html">Sachin Tendulkar</a> |
+  <a href="./ABdeVilliers.html">AB de Villiers</a> |
+  <a href="matchbooking.html">Match Booking</a> |
+  <a href="Gallery.html">Gallery</a>
+</nav>
+
+<div class="move">
+<h1>Cricket Legends</h1>
+</div>
+
+<div class="container">
+  <img src="cricket-legends.jpg" alt="Cricket Legends" class="image">
+  <div class="middle">
+    <div class="text">Cricket Legends</div>
+  </div>
+</div>
+<br>
+<div class="text1">
+<h4>About Cricket Legends:</h4>
+<p>
+This blog is dedicated to celebrating the lives and achievements of cricket's most iconic players. Explore individual pages for legends like Virat Kohli, MS Dhoni, Sachin Tendulkar, and AB de Villiers to learn about their journey, records, and contribution to cricket.
+</p>
+<p>
+Stay updated on their records, watch highlights of their greatest moments, and read detailed biographies. Each page is filled with fascinating stories about these cricketers who have inspired millions.
+</p>
+</div>
+<br>
+<footer>
+  <div class="social-media-buttons">
+    <a href="https://www.facebook.com/login.php/" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://x.com/" class="fa fa-twitter" target="_blank"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+    </div>
+
+  <p>Author: Jeffrey Jeyaseelan</p>
+  <p><a href="mailto:jj24csb0b29@student.nitw.ac.in">jj24csb0b29@student.nitw.ac.in</a></p>
+  <section class="subscribe" id="subscribe">
+    <h4>Subscribe for Updates</h4>
+    <p>Stay updated with the latest news on your favorite cricket legends. Enter your details below:</p>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+   
+  </section>
+  <div class="button3">Subscribe</div>
+</div>
+</footer>
+</div>
+
+</body>
+
+</html>

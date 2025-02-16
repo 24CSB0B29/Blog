@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.gallery-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0073e6;
+  color: white;
+  position: relative;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Cricket Legends Gallery</h1>
+</div>
+
+<div class="gallery-container">
+  <div class="gallery-item">
+    <img src="2.avif" alt="Virat Kohli">
+    <div class="caption">Virat Kohli</div>
+  </div>
+  <div class="gallery-item">
+    <img src="dhoniheadshot-min.jpg" alt="MS Dhoni">
+    <div class="caption">MS Dhoni</div>
+  </div>
+  <div class="gallery-item">
+    <img src="sachin-tendulkar-20160824144415-36871.jpg" alt="Sachin Tendulkar">
+    <div class="caption">Sachin Tendulkar</div>
+  </div>
+  <div class="gallery-item">
+    <img src="792-camedia.png" alt="AB de Villiers">
+    <div class="caption">AB de Villiers</div>
+  </div>
+</div>
+<br>
+<div class="gallery-container">
+    <div class="gallery-item">
+      <img src="107_compress.avif" alt="Rohit Sharma">
+      <div class="caption">Rohit Sharma</div>
+    </div>
+    <div class="gallery-item">
+      <img src="1201_headshot_safari.avif" alt="Chris Gayle">
+      <div class="caption">Chris Gayle</div>
+    </div>
+    <div class="gallery-item">
+      <img src="sKIKwz3S_400x400.jpg" alt="Ricky Ponting">
+      <div class="caption">Ricky Ponting</div>
+    </div>
+    <div class="gallery-item">
+      <img src="cricket-nzl-sri_78d285b0-ce5a-11e5-a2fe-c1a20f4c7a81.avif" alt="Brendon McCullum">
+      <div class="caption">Brendon McCullum</div>
+    </div>
+  </div>
+  <br>
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="900.png" alt="James Anderson">
+      <div class="caption">James Anderson</div>
+    </div>
+    <div class="gallery-item">
+      <img src="Jacques_Kallis-2.jpg" alt="Jacques_Kallis">
+      <div class="caption">Jacques_Kallis</div>
+    </div>
+    <div class="gallery-item">
+      <img src="1080.png" alt="Mitchell Starc">
+      <div class="caption">Mitchell Starc</div>
+    </div>
+    <div class="gallery-item">
+      <img src="32d4jk2k_shane-warne-australia-_625x300_06_May_21.webp" alt="Shane Warne">
+      <div class="caption">Shane Warne</div>
+    </div>
+  </div>
+
+<div class="footer">
+  <p>&copy; 2025 Cricket Gallery | Created by Jeffrey Jeyaseelan</p>
+</div>
+
+</body>
+</html>

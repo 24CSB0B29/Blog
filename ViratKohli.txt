@@ -1,0 +1,145 @@
+<html>
+<head>
+<style> 
+.move {
+  width: 100px;
+  height: 120px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:1000px; top:0px;}
+  25%  {background-color:yellow; left:1200px; top:0px;}
+  50%  {background-color:blue; left:1200px; top:200px;}
+  75%  {background-color:green; left:1000px; top:200px;}
+  100% {background-color:red; left:1000px; top:0px;}
+}
+</style>
+
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+<style>
+.myDiv {
+  border: 5px outset orange;
+  background-color: lightblue;    
+  text-align: center;
+}
+</style>
+<style>
+
+.button3 {
+  background-color: white;
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+</style>
+<div class="myDiv">
+<title>BLOG</title>
+<h1>Virat Kohli</h1>
+
+<nav>
+  <a href="/Home/">Home</a> |
+  <a href="/Blog/">Blog</a> |
+  <a href="/Categories/">Categories</a> |
+  <a href="/About/">About</a> |
+<a href="/Contact/">Contact</a>
+</nav>
+
+<div class="move">
+<h1>King of Cricket</h1>
+</div>
+
+
+<div class="container">
+  <img src="images.jpg" alt="Virat Kohli" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Virat Kohli</div>
+  </div>
+</div>
+
+
+<br>
+<h4>About Kohli:</h4>
+<p>
+Virat Kohli is an Indian international cricketer who plays Test and ODI cricket for 
+the Indian national team. A former captain in all formats of the game, 
+Kohli retired from the T20I format following India's win at the 2024 T20 World Cup. 
+He's a right-handed batsman and an occasional unorthodox right arm medium pace bowler. 
+Kohli holds the highest IPL run-scorer record, ranks third in T20I, third in ODI, 
+and stands the fourth-highest in international cricket. Regarded as one of the greatest batsmen of all time, 
+he also holds the record for scoring the most centuries in ODI cricket and is second in the list of most international centuries scored in international cricket.
+</p>
+
+<p>
+Kohli was a member of the Indian team that won the 2008 Under-19 Cricket World Cup, 2011 Cricket World Cup, 2013 Champions Trophy and 2024 T20 World Cup and also captained India to win the ICC Test mace three consecutive times in 2017, 2018, and 2019. He represents Royal Challengers Bengaluru in the Indian Premier League and Delhi in domestic cricket.
+</p>
+<p>
+In 2013, Kohli was ranked number one in the ODI batsmen ICC rankings. In 2015, he also achieved the same for T20I rankings. In 2018, he was ranked the top Test batsman, making him the only Indian cricketer to hold the number one spot in all three formats. He is the first player to score 20,000 runs in a decade. In 2020, the ICC named him the male cricketer of the decade.
+</p>
+Kohli has garnered 10 ICC Awards making him the most awarded player in International Cricket history. He won the ICC ODI Player of the Year award four times in 2012, 2017, 2018, and 2023. He also won the Sir Garfield Sobers Trophy, given to the ICC Cricketer of the Year, on two occasions, in 2017 and 2018 respectively. In 2018, he became the first player to win both ICC ODI and Test Player of the Year awards in the same year. Also, he was named the Wisden Leading Cricketer in the World for three consecutive years, from 2016 to 2018. Kohli has the most Player of the Series awards and second most Player of the Match awards to his name in all three formats combined. He was honoured with the Arjuna Award in 2013, the Padma Shri in 2017, and India's highest sporting honour, the Khel Ratna Award, in 2018. In 2018, Time magazine included him on its list of the 100 most influential people in the world.
+<p>
+After winning the 2024 T20 World Cup and the Player of the Match in the Final, Kohli announced his retirement from T20Is.
+</p>
+<br>
+
+<footer>
+  <p>Author: Jeffrey Jeyaseelan</p>
+  <p><a href="mailto:jj24csb0b29@student.nitw.ac.in">jj24csb0b29@student.nitw.ac.in</a></p>
+<div class="container">
+  <img src="1ed6e0a9e69176a5fdb7e090a1046b86.jpg" alt="@jeff_seelan" class="image" style="width:20%">
+  <div class="middle">
+    <div class="text">@jeff_seelan</div>
+  </div>
+</div>
+</footer>
+<div class="button3">Subscribe</div>
+</div>

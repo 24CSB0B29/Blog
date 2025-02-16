@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+*{
+  margin:0;
+  padding:0;
+}
+h1, h4 {
+  color: #2c3e50; /* Deep navy */
+}
+
+p {
+  color: #34495e; /* Muted navy */
+  line-height: 1.6;
+}
+
+nav a {
+  font-family: 'Audiowide', sans-serif; 
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #3498db; /* Soft blue */
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background-color: #2980b9; /* Darker blue */
+  transform: scale(1.1); 
+}
+
+.myDiv {
+  border: 5px outset #2ecc71; /* Green border */
+  background-color: #021014d4; /* Light grey */
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 12px;
+  color:white;
+}
+
+.move {
+  width: 125px;
+  height: 120px;
+  background-color: #8e44ad; /* Purple */
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-radius: 12px;
+  color: white;
+}
+
+@keyframes example {
+  0%   {background-color: #8e44ad; left:1200px; top:0px;}
+
+  50%  {background-color: #f1c40f; left:1200px; top:200px;}
+  100% {background-color: #8e44ad; left:1200px; top:0px;}
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #3498db; /* Soft blue */
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+.text1 {
+  color: rgb(230, 102, 23);
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+.text1 p{
+  color: rgb(246, 244, 243);
+}
+.text1 h4{
+  color:rgb(231, 239, 11)
+}
+.text1 h1{
+  color:rgb(7, 237, 245)
+}
+
+.button3 {
+  background-color: white;
+  color: #e74c3c; /* Soft red */
+  border: 2px solid #e74c3c;
+  font-family: 'Sofia', cursive;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button3:hover {
+  background-color: #e74c3c;
+  color: white;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #2c3e50; /* Deep navy */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border-radius: 12px 12px 0 0;
+}
+
+footer a {
+  color: rgb(102, 102, 255); 
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+}
+footer p{
+  color:white;
+}
+
+.fa-facebook { background: #3b5998; color: white; }
+.fa-twitter { background: #1da1f2; color: white; }
+.fa-instagram { background: #c13584; color: white; }
+
+.fa:hover {
+  transform: scale(1.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="myDiv">
+<title>AB de Villiers - Cricket Legend</title>
+<div class="text1">
+<h1>AB de Villiers</h1>
+</div>
+<br>
+
+<nav>
+  <a href="./Cricket.html">Home</a> |
+  <a href="ABdeVIlliers_records.html">Records</a>
+</nav>
+
+<div class="move">
+<h1>Mr. 360</h1>
+</div>
+
+<div class="container">
+  <img src="792-camedia.png" alt="AB de Villiers" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">AB de Villiers</div>
+  </div>
+</div>
+<br>
+<div class="text1">
+<h4>About AB de Villiers:</h4>
+<p>
+Abraham Benjamin de Villiers, fondly known as "Mr. 360" for his ability to hit shots all around the ground, is one of the most innovative and entertaining cricketers in the history of the sport. A South African batting legend, he has redefined modern cricket with his unorthodox style and match-winning abilities.
+</p>
+<p>
+De Villiers has numerous records to his name, including the fastest century in ODI cricket, scored off just 31 balls. A versatile player, he has played in various roles, including wicketkeeper-batsman, fielder, and captain. He has been a vital part of the Royal Challengers Bangalore in the Indian Premier League (IPL) and has built an unparalleled fanbase worldwide.
+</p>
+<p>
+Known for his sportsmanship and humility, de Villiers is also a talented musician and enjoys playing the guitar. His contributions to South African cricket and world cricket have made him a global icon, respected and loved by fans of all nations.
+</p>
+</div>
+<br>
+<footer>
+  <div class="social-media-buttons">
+    <a href="https://www.facebook.com/login.php/" class="fa fa-facebook" target="_blank"></a>
+    <a href="https://x.com/" class="fa fa-twitter" target="_blank"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+    </div>
+
+  <p>Author: Jeffrey Jeyaseelan</p>
+  <p><a href="mailto:jj24csb0b29@student.nitw.ac.in">jj24csb0b29@student.nitw.ac.in</a></p>
+  <div class="button3">Subscribe</div>
+</div>
+</footer>
+</body>
+</html>
